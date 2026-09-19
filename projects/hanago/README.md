@@ -14,7 +14,7 @@
 
 <br/>
 
-**[📖 Explore Live Documentation & User Guide](https://mmks735.github.io/AppStick/hanago/)** • **[🏢 Contact AppStick for Commercial License](https://appstick.com.bd)**
+**[📖 Explore Live Documentation & User Guide](https://mmks735.github.io/greencart/)** • **[🏢 Contact AppStick for Commercial License](https://appstick.com.bd)**
 
 </div>
 

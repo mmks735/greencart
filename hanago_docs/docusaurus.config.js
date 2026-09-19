@@ -12,10 +12,10 @@ const config = {
   },
 
   url: 'https://mmks735.github.io',
-  baseUrl: '/AppStick/',
+  baseUrl: '/greencart/',
 
   organizationName: 'mmks735',
-  projectName: 'AppStick',
+  projectName: 'greencart',
   trailingSlash: false,
 
   onBrokenLinks: 'warn',

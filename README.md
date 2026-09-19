@@ -53,7 +53,7 @@
 <br/><br/>
 
 [![Case Study](https://img.shields.io/badge/Read_Full_Case_Study-GreenCart-green?style=for-the-badge&logo=readme)](./projects/hanago/README.md)
-[![Live Documentation](https://img.shields.io/badge/Live_Documentation-GitHub_Pages-blue?style=for-the-badge&logo=githubpages)](https://mmks735.github.io/AppStick/hanago/)
+[![Live Documentation](https://img.shields.io/badge/Live_Documentation-GitHub_Pages-blue?style=for-the-badge&logo=githubpages)](https://mmks735.github.io/greencart/)
 
 </div>
 
