@@ -1,104 +1,159 @@
-# 🚀 AppStick Engineering Showcase & Contributions
+﻿# 🛒 GreenCart — Smart AI-Powered Grocery & E-Commerce Flutter App
 
 <div align="center">
 
-# MD. Mahfujul Karim Sheikh
-### Mobile Application Engineer @ [AppStick Ltd](https://appstick.com.bd)
+<img src="./assets/icons/greencart_logo.png" alt="GreenCart Logo" width="130"/>
 
-[![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
-[![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
-[![GetX](https://img.shields.io/badge/State_Management-GetX-8A2BE2?style=for-the-badge&logo=getx&logoColor=white)](https://pub.dev/packages/get)
-[![Architecture](https://img.shields.io/badge/Architecture-Clean%20%2F%20Feature--First-blueviolet?style=for-the-badge)](#-engineering-philosophy--architecture)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com)
-[![Live Website](https://img.shields.io/badge/??_Live_Documentation-Visit_Website-2ea44f?style=for-the-badge&logo=githubpages&logoColor=white)](https://mmks735.github.io/greencart/)
+### Next-Generation Production-Grade Mobile Application with AI Shopping Assistant
+Developed at **[AppStick Ltd](https://appstick.com.bd)** • Engineered by **[MD. Mahfujul Karim Sheikh (mmks735)](https://github.com/mmks735)**
 
 <br/>
 
-*A curated technical showcase of production-grade mobile applications, architectural design, and complex feature implementations delivered during my tenure at **AppStick Ltd**.*
+[![Live Documentation](https://img.shields.io/badge/📖_Live_Documentation-Visit_Website-2ea44f?style=for-the-badge&logo=docusaurus&logoColor=white)](https://mmks735.github.io/greencart/)
+[![GitHub Pages](https://img.shields.io/badge/Status-Online_&_Live-success?style=for-the-badge&logo=github)](https://mmks735.github.io/greencart/)
+[![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?style=for-the-badge&logo=flutter&logoColor=white)](https://flutter.dev)
+[![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
+[![GetX](https://img.shields.io/badge/State_Management-GetX-8A2BE2?style=for-the-badge&logo=getx&logoColor=white)](https://pub.dev/packages/get)
+[![Screens](https://img.shields.io/badge/Screens-26+-orange?style=for-the-badge)](#-ui-showcase--screen-previews)
+
+<br/>
+
+**[🌐 Visit Live Documentation & User Guide](https://mmks735.github.io/greencart/)** • **[🏢 Contact AppStick Ltd](https://appstick.com.bd)**
 
 </div>
 
 ---
 
 > [!IMPORTANT]
-> ### 🔒 Intellectual Property & Source Code Notice
-> The source code of all featured projects is proprietary software owned by **AppStick Ltd** and/or its commercial clients. In accordance with strict non-disclosure agreements (NDA) and company confidentiality policies:
-> * **Raw proprietary source code is NOT publicly hosted in this repository.**
-> * **Purpose:** This repository serves as a professional portfolio documenting technical contributions, system architecture, UI/UX implementation, and business impact.
-> * **Commercial & Enterprise Inquiries:** To license, acquire source code, or hire AppStick Ltd for software engineering, please contact **[AppStick Ltd Official Website](https://appstick.com.bd)**.
+> ### 🔒 Intellectual Property & Proprietary Code Notice
+> **GreenCart** is a proprietary commercial mobile application template developed at **AppStick Ltd** for enterprise clients and commercial distribution.
+> * **Code Privacy:** To comply with company NDA, client confidentiality, and intellectual property rights, **the raw backend API keys and proprietary commercial source code are not publicly hosted in this repository**.
+> * **Purpose of this Repository:** This repository serves as a dedicated technical showcase, engineering case study, UI/UX preview gallery, and interactive documentation hub for the GreenCart platform.
+> * **Need the Code or Commercial License?** To acquire a commercial license, source code access, or enterprise customization, please contact **[AppStick Ltd](https://appstick.com.bd)** directly.
 
 ---
 
-## 📱 Featured Production Projects
+## 📌 Project Overview
 
-| App / Platform | Domain / Category | Core Tech Stack | My Key Contributions | Case Study & Previews |
-| :--- | :--- | :--- | :--- | :---: |
-| **GreenCart (HanaGo)** | Smart Grocery & AI E-Commerce | Flutter, GetX, AI Voice/Chat, Glassmorphic UI | Full 26+ Screen UI, AI Shopping Assistant, Dynamic Cart & Checkout, Live Order Tracking | [👉 View Case Study](./projects/greencart/README.md) |
-| **Vincy Rideshare (User & Driver)** | Real-time On-Demand Ride Sharing | Flutter, GetX, Dio, Google Maps SDK, WebSockets | Driver & Rider real-time GPS tracking, OTP Authentication, Fare Estimator, Ride Flow | *(Case Study Coming Soon)* |
-| **Jisr Healthcare & Telemedicine** | Healthcare & Patient Portal | Flutter, GetX, SVG Vectors, Telehealth UI | Patient appointment booking, Doctor schedules, Medical records, Prescription viewer | *(Case Study Coming Soon)* |
-| **NutriHealth & Metrics** | Health Monitoring & Vital Analytics | Flutter, GetX, FL Chart, SharedPreferences | Anatomical Body Map, Vital Trend Charts, Health Metric Logging, Local Persistence | *(Case Study Coming Soon)* |
-| **Xpen-Stick** | Fintech & Enterprise Expense Tracker | Flutter, Lottie, SMS Autofill, Maps | Expense categorization, Visual analytics, OTP verification, Interactive maps | *(Case Study Coming Soon)* |
-| **Blood Bank & Donation Network** | Emergency Health Services | Flutter, Geo-Location, Donor Finder | Emergency blood request broadcast, Donor matchmaking, Direct calling integration | *(Case Study Coming Soon)* |
+**GreenCart** is a modern, high-performance Smart Grocery Shopping & E-Commerce Flutter mobile application. Engineered for supermarkets, grocery delivery chains, and organic food retailers, it combines a sleek **glassmorphic design system** with an integrated **AI shopping assistant** supporting both natural language text and voice interactions.
+
+### 🌟 Key Highlights
+- 🤖 **Integrated AI Shopping Assistant:** Text chat and voice recognition for intelligent grocery search, personalized recommendations, and direct-to-cart operations.
+- 🛍️ **Complete End-to-End Shopping Engine:** Catalog browsing, smart search with category filtering, wishlist, cart with voucher logic, and multi-step checkout.
+- 📍 **Real-time Order Tracking:** Interactive milestone stepper for live tracking of grocery deliveries from confirmation to doorstep arrival.
+- 🎨 **Modern Glassmorphic UI:** Bespoke visual tokens, micro-interactions, responsive typography, and smooth 60fps scrolling.
+- 🌐 **Multi-Language Support:** Translation architecture supporting multiple locales with clean JSON localization files.
+- 📚 **Full Technical Documentation:** Integrated Docusaurus-powered developer portal live on GitHub Pages.
 
 ---
 
-## 🛒 Deep-Dive: GreenCart (HanaGo)
+## 👨‍💻 My Role & Key Contributions
+
+As a core **Mobile Application Engineer** on this project at **AppStick Ltd**, I led the engineering of key modules:
+
+### 1. System Architecture & Reactive State (GetX)
+* Structured the entire project using **Clean / Feature-First Architecture** to maintain clean boundaries between data, domain, and presentation layers.
+* Utilized **GetX Controllers & Bindings** for reactive state handling across cart calculations, authentication states, product filtering, and dynamic voucher discounts.
+
+### 2. GreenCart AI Assistant Module
+* Built the dedicated conversational AI interface supporting both text queries and speech-to-text voice input.
+* Designed custom audio wave animations for voice recognition states.
+* Implemented interactive product cards embedded directly within the AI conversation feed.
+
+### 3. Shopping & Checkout Experience
+* **Dynamic Cart:** Reactive subtotal, VAT/tax handling, delivery fee calculation, and instant promo code validation.
+* **Multi-Step Checkout:** Address picker, scheduled delivery date/time slot selector, and payment options (Card, COD, Mobile Wallet).
+* **Live Order Tracking:** Step-by-step visual delivery status monitor.
+
+### 4. Developer Documentation Hub
+* Authored and published the complete interactive documentation portal using **Docusaurus**, covering project setup, folder structure, API integration, and screen-by-screen code reference.
+
+---
+
+## 📱 UI Showcase & Screen Previews
 
 <div align="center">
 
-<img src="./assets/screenshots/greencart/home.png" width="220" alt="GreenCart Home"/>
-<img src="./assets/screenshots/greencart/hana_ai.png" width="220" alt="GreenCart AI Assistant"/>
-<img src="./assets/screenshots/greencart/cart.png" width="220" alt="GreenCart Cart"/>
-<img src="./assets/screenshots/greencart/track_order.png" width="220" alt="GreenCart Track Order"/>
+### 🌟 Home Experience & Category Browsing
+| Welcome & Onboarding | Glassmorphic Home Feed | Category Catalog | Featured Deals & Offers |
+| :---: | :---: | :---: | :---: |
+| <img src="./assets/screenshots/greencart/welcome.png" width="180"/> | <img src="./assets/screenshots/greencart/home.png" width="180"/> | <img src="./assets/screenshots/greencart/category.png" width="180"/> | <img src="./assets/screenshots/greencart/home_offers.png" width="180"/> |
 
-<br/><br/>
+### 🤖 GreenCart AI Assistant (Text & Voice)
+| AI Home Entry | AI Chat Feed | Voice Interaction State | AI Recommended Product |
+| :---: | :---: | :---: | :---: |
+| <img src="./assets/screenshots/greencart/home_ai.png" width="180"/> | <img src="./assets/screenshots/greencart/hana_ai.png" width="180"/> | <img src="./assets/screenshots/greencart/hana_ai_voice.png" width="180"/> | <img src="./assets/screenshots/greencart/ai_product_card.png" width="180"/> |
 
-[![Case Study](https://img.shields.io/badge/Read_Full_Case_Study-GreenCart-green?style=for-the-badge&logo=readme)](./projects/greencart/README.md)
-[![Live Documentation](https://img.shields.io/badge/Live_Documentation-GitHub_Pages-blue?style=for-the-badge&logo=githubpages)](https://mmks735.github.io/greencart/)
+### 🛒 Shopping, Cart & Checkout Flow
+| Product Details | Dynamic Cart | Checkout & Time Slot | Order Confirmed |
+| :---: | :---: | :---: | :---: |
+| <img src="./assets/screenshots/greencart/product_details.png" width="180"/> | <img src="./assets/screenshots/greencart/cart.png" width="180"/> | <img src="./assets/screenshots/greencart/checkout.png" width="180"/> | <img src="./assets/screenshots/greencart/order_confirmed.png" width="180"/> |
+
+### 📦 Order Management & Account
+| Live Order Tracking | Order History | Saved Addresses | Notification Center |
+| :---: | :---: | :---: | :---: |
+| <img src="./assets/screenshots/greencart/track_order.png" width="180"/> | <img src="./assets/screenshots/greencart/my_orders.png" width="180"/> | <img src="./assets/screenshots/greencart/delivery_address.png" width="180"/> | <img src="./assets/screenshots/greencart/notifications.png" width="180"/> |
 
 </div>
 
-### Highlights of GreenCart
-* 🤖 **AI-Powered Shopping Assistant:** Conversational chat & voice recognition for instant product discovery and direct-to-cart operations.
-* 🛍️ **Complete E-Commerce Flow:** 26+ screens encompassing catalog browsing, search filters, cart with voucher logic, and multi-step checkout.
-* 🎨 **Glassmorphism Design:** Modern aesthetic with custom animations and smooth 60fps scrolling.
-* 📖 **[Explore Full GreenCart Case Study & UI Previews &rarr;](./projects/greencart/README.md)**
+---
+
+## 🏗️ Technical Architecture
+
+```
+lib/
+├── app/
+│   ├── data/                 # Models, local datasets, API providers
+│   │   ├── models/           # ProductModel, CategoryModel, OrderModel, CartItemModel
+│   │   └── providers/        # REST API clients & JSON data providers
+│   ├── modules/              # Feature modules (View + Controller + Binding)
+│   │   ├── home/             # Home feed, banner carousels, category cards
+│   │   ├── ai_assistant/     # Conversational AI chat, voice visualizer
+│   │   ├── cart/             # Reactive cart controller, voucher logic
+│   │   ├── checkout/         # Delivery slot picker, address & payment flows
+│   │   ├── order/            # Live tracking stepper, receipt details
+│   │   └── product/          # Product details, image gallery, reviews
+│   ├── routes/               # GetX AppPages & AppRoutes
+│   └── theme/                # Glassmorphic color tokens, typography, shadows
+└── main.dart                 # App initialization, localization bindings
+```
+
+### 🧰 Tech Stack & Libraries
+
+| Category | Technology / Package | Purpose |
+| :--- | :--- | :--- |
+| **Framework** | [Flutter 3.x](https://flutter.dev) | Cross-platform UI toolkit (Android & iOS) |
+| **Language** | [Dart 3.x](https://dart.dev) | Strict null-safe core programming language |
+| **State Management** | `get: ^4.6.6` | Reactive state handling, dependency injection & routing |
+| **Icons & Vectors** | `flutter_svg: ^2.0.16` | High-definition SVG asset rendering |
+| **Date & Currency** | `intl: ^0.20.2` | Date formatting, internationalization & currency parsing |
+| **Documentation** | [Docusaurus 3.x](https://docusaurus.io) | Interactive documentation portal hosted on GitHub Pages |
 
 ---
 
-## 🛠️ Core Engineering Skillset
+## 📖 Live Documentation Website
 
-```
-                       ┌─────────────────────────┐
-                       │  Mobile App Engineering │
-                       └────────────┬────────────┘
-                                    │
-         ┌──────────────────────────┼──────────────────────────┐
-         │                          │                          │
-┌────────┴─────────┐       ┌────────┴─────────┐       ┌────────┴─────────┐
-│ State Management │       │  Architecture    │       │ Integrations     │
-│ • GetX           │       │ • Clean Arch     │       │ • Dio / REST API │
-│ • Provider       │       │ • Feature-First  │       │ • Google Maps    │
-│ • Reactive Binds │       │ • Repository     │       │ • Lottie / SVG   │
-└──────────────────┘       └──────────────────┘       └──────────────────┘
-```
+The full documentation for **GreenCart** is published and accessible online:
 
-- **Framework & Languages:** Flutter 3.x, Dart 3.x, JavaScript/TypeScript (Docusaurus)
-- **State Management & Architecture:** GetX (Controllers, Bindings, Reactive State), Clean Architecture, Feature-First MVVM
-- **Networking & Data:** Dio with interceptors, JWT token refresh, Offline Caching, Shared Preferences
-- **UI & Animations:** Glassmorphic UI design, Custom Painter, Lottie animations, FL Chart data visualization
-- **DevOps & Tooling:** Git, GitHub Actions, Docusaurus documentation engine
+👉 **[https://mmks735.github.io/greencart/](https://mmks735.github.io/greencart/)**
+
+The documentation includes:
+- **Getting Started:** Installation guide, prerequisites, VS Code & Android Studio setup.
+- **Project Structure:** Deep-dive into controllers, models, and clean architecture.
+- **Screen & Code Reference:** Visual side-by-side view of all 26+ screens with corresponding source code snippets.
+- **Customization Guide:** Theming, product catalog modification, REST API integration, and multi-language setup.
 
 ---
 
-## 📬 Contact & Links
+## 📬 Business & Hiring Inquiries
 
-* **GitHub:** [@mmks735](https://github.com/mmks735)
+* **Developer:** MD. Mahfujul Karim Sheikh ([@mmks735](https://github.com/mmks735))
+* **Role:** Mobile Application Engineer @ AppStick Ltd
 * **Company:** [AppStick Ltd](https://appstick.com.bd)
 * **Location:** Khulna, Bangladesh
 
 ---
-<div align="center">
-<sub>Designed & Maintained by MD. Mahfujul Karim Sheikh • Powered by Flutter & Markdown</sub>
-</div>
 
+<div align="center">
+<sub>Designed & Maintained by MD. Mahfujul Karim Sheikh • Built with Flutter & Docusaurus</sub>
+</div>
