@@ -1,0 +1,106 @@
+---
+sidebar_position: 2
+title: Quick Start
+description: Get GreenCart running on your device in under 5 minutes — no setup required if Flutter is already installed.
+---
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+import ZoomableImage from '@site/src/components/ZoomableImage';
+
+# Quick Start
+
+> Get **GreenCart** up and running on your device in under 5 minutes.
+
+:::info Prerequisites
+This guide assumes **Flutter SDK is already installed** on your machine.
+If not, follow the full [Installation Guide](./installation) first — it takes about 15 minutes.
+:::
+
+---
+
+## Step 1 — Extract the Downloaded Files
+
+After purchasing from CodeCanyon, you will receive a `.zip` file.
+Extract it anywhere on your computer.
+
+```
+hana-go-v1.0.0/
+├── hana_go/          ← Your main Flutter project
+├── hana_go_docs/     ← This documentation site
+└── README.pdf        ← Quick reference card
+```
+
+:::important
+Always work inside the **`hana_go/`** folder — that is your Flutter project root.
+:::
+
+---
+
+## Step 2 — Open the Project
+
+1. Open **VS Code**
+2. Go to **File → Open Folder**
+3. Select the `hana_go/` folder and click **Open**
+
+<ZoomableImage src="/img/screenshots/installation/vscode_open_project.png" alt="Opening the project in VS Code" width={500} />
+
+---
+
+## Step 3 — Install Packages
+
+Open the **terminal** inside your editor and run:
+
+```bash
+flutter pub get
+```
+
+Wait for it to finish. You should see:
+
+```
+Resolving dependencies...
+Got dependencies!
+```
+
+<img src="/img/screenshots/installation/flutter_pub_get.png" alt="flutter pub get output" width="600" />
+
+---
+
+## Step 4 — Run the App
+
+<Tabs>
+  <TabItem value="vscode" label="VS Code (Recommended)" default>
+
+1. Click the **Run and Debug** icon in the left sidebar, or press `Ctrl+Shift+D`
+2. Select your **emulator or physical device** from the dropdown at the top
+3. Click the green **▶ Run** button, or press `F5`
+4. Wait **60–90 seconds** for the first build to complete
+
+<img src="/img/screenshots/installation/vscode_run_debug.png" alt="Run and Debug panel" width="900" />
+
+  </TabItem>
+  <TabItem value="terminal" label="Terminal">
+
+```bash
+# See all connected devices
+flutter devices
+
+# Run on the default device
+flutter run
+
+# Run on a specific device
+flutter run -d <device-id>
+```
+
+  </TabItem>
+</Tabs>
+
+<div style={{textAlign: 'center', marginTop: '1.5rem', marginBottom: '0.5rem'}}>
+  <p style={{color: '#6B7280', fontSize: '0.9rem', marginBottom: '0.75rem'}}>Your app should now look like this:</p>
+  <img src="/img/screenshots/installation/app_running.png" alt="GreenCart running on device" width="280" />
+</div>
+
+:::tip Hot Reload and Hot Restart
+- Press **`r`** in the terminal → **Hot Reload** — updates the UI instantly, keeps app state
+- Press **`R`** in the terminal → **Hot Restart** — full restart, resets state — use after logic or controller changes
+:::

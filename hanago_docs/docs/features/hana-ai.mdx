@@ -1,0 +1,81 @@
+---
+sidebar_position: 6
+title: Hana AI Assistant
+description: AI-powered grocery assistant with voice input, chat, product recommendations, and recipes.
+---
+
+import ZoomableImage from '@site/src/components/ZoomableImage';
+
+# Hana AI Assistant
+
+**Hana AI** is a built-in grocery assistant that helps users find products, get recipes, and shop smarter.
+
+---
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/hana_ai.png" alt="AI Assistant" width={280} /><br/><em>AI Chat</em></div>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/hana_ai_voice.png" alt="AI Voice Input" width={280} /><br/><em>Voice Input</em></div>
+</div>
+
+---
+
+## Features
+
+### Text Chat
+Type questions and get product recommendations as chat messages.
+
+### Voice Input
+Tap the microphone button, speak naturally, and the app transcribes your voice.
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/hana_ai_voice.png" alt="Voice Input" width={280} /><br/><em>Voice Input</em></div>
+</div>
+
+---
+
+### Product Recommendations
+
+When the AI suggests a product, it shows a card with:
+- Product image
+- Name and price
+- **Add to Cart** button
+
+Tap "Add to Cart" to add the item directly.
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/ai_product_card.png" alt="AI Product Card" width={280} /><br/><em>AI Product Card</em></div>
+</div>
+
+---
+
+### Recipe Suggestions
+
+The AI can suggest recipes with:
+- Recipe name and cook time
+- Ingredient list
+- **Add All to Cart** button — adds all ingredients at once
+
+---
+
+## How It Works
+
+1. User types or speaks a question
+2. AI processes the request
+3. AI responds with text, product cards, or recipe cards
+4. User can add items to cart directly from the chat
+
+---
+
+## Example Prompts
+
+Try asking the AI:
+- "What's fresh today?"
+- "Suggest a healthy breakfast"
+- "Find me a pasta recipe"
+- "Add milk to my cart"
+
+---
+
+:::info Connecting Your AI
+The AI chat UI is fully built. Connect your own AI backend (OpenAI, Gemini, Claude, or custom) by updating the `sendMessage` function in `hana_ai_controller.dart`.
+:::

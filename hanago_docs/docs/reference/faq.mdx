@@ -1,0 +1,127 @@
+---
+sidebar_position: 1
+title: FAQ
+description: Frequently asked questions about GreenCart Flutter grocery app template.
+---
+
+# Frequently Asked Questions
+
+---
+
+## Purchasing & Licensing
+
+### Which license do I need?
+
+| License | Use Case |
+|---------|----------|
+| **Regular License** | One product for you or one client. Not for resale. |
+| **Extended License** | Multiple clients, SaaS products, or resale. |
+
+Most freelancers building for one client need a **Regular License**.
+
+### Can I use GreenCart for multiple clients?
+You need a separate Regular License for each client project. Or buy an Extended License for multiple use.
+
+### Is the source code included?
+Yes. You get the complete Flutter source code. This includes all Dart files, assets, and documentation.
+
+---
+
+## Setup & Installation
+
+### What Flutter version do I need?
+**Flutter 3.12.0 or higher** on the stable channel. Run `flutter upgrade` to update.
+
+### The app won't run on my machine. What should I check?
+Run `flutter doctor` and fix all issues. Common fixes:
+- Accept Android licenses: `flutter doctor --android-licenses`
+- Install CocoaPods (macOS): `sudo gem install cocoapods`
+- Connect a device or emulator: `flutter devices`
+
+### Do I need Firebase to run the app?
+**No**. Firebase is optional. The app launches without it. Push notifications won't work until you set up Firebase.
+
+### Why do I get a Google Places API error?
+Add your **Google Places API key** to the config file.
+
+---
+
+## Customization
+
+### How do I change the primary color?
+Edit `lib/constants/ui.dart`. Change `AppColors.primary` to any `Color(0xFFHHHHHH)`. Hot reload updates all 26+ screens instantly.
+
+### Can I remove the Hana AI screen?
+Yes. In `lib/navigator/app_navigator.dart`, remove the AI tab from the `_tabs` list and `bottomNavigationBar` items. Also remove the `hana_ai` route from `lib/routes/pages.dart`.
+
+### How do I add a new language?
+Add a JSON file in `assets/translations/`. Declare it in `pubspec.yaml`. Add the locale to `kSupportedLanguages`.
+
+### How do I replace the font?
+Add font files to `assets/font/`. Declare them in `pubspec.yaml`. Change `fontFamily` in `lib/theme/app.dart`.
+
+### Can I add more product categories?
+Yes. Add category items to the `_kQuickCategories` list in `home_quick_categories.dart`. Add the corresponding icon SVG to `assets/icons/catagory/<your_category>/`.
+
+---
+
+## Backend Integration
+
+### Is a backend included?
+No. GreenCart is a **Flutter UI template**. It uses mock data. It connects to any REST API or Firebase backend.
+
+### What backend stack is recommended?
+Any REST API works. Popular choices:
+- **Node.js + Express + MongoDB** - Flexible and easy to deploy.
+- **Firebase Firestore** - Fast setup, real-time, no server management.
+- **Supabase** - PostgreSQL with REST/realtime. Generous free tier.
+- **Django REST Framework** - Great for Python teams.
+
+### How do I connect to my API?
+Replace data loaders in `lib/data/loaders/` with `dio` HTTP calls. No UI changes needed.
+
+### Does it support GraphQL?
+Not by default. You can swap `dio` for the `graphql_flutter` package. The architecture supports it cleanly.
+
+---
+
+## Platform & Device
+
+### Does it work on iOS and Android?
+Yes. GreenCart is built with Flutter. It runs natively on both platforms.
+
+### What Android API level is required?
+**Minimum SDK 21** (Android 5.0). This covers 99%+ of active Android devices.
+
+### What iOS version is required?
+**iOS 12.0+**.
+
+### Can I publish to the App Store and Play Store?
+Yes. GreenCart is production-ready from a UI standpoint. You need to:
+1. Connect a real backend
+2. Configure Firebase for push notifications
+3. Sign the app with your certificates or keystores
+4. Update bundle IDs and app name
+
+---
+
+## Hana AI
+
+### Does the AI assistant actually work?
+The **UI is fully built**. Voice input, chat bubbles, product cards, and recipe cards are included. The AI responses are mocked. Connect to any LLM API (OpenAI, Gemini, Claude) to make it live. See [Hana AI](../features/hana-ai).
+
+### Can I remove voice input?
+Yes. In `hana_ai_view.dart`, remove or hide the microphone button. The text input works independently.
+
+---
+
+## Getting Help
+
+### Something is broken. Where do I report it?
+Contact support via the **[Support page](./support)**. Provide your item purchase code and describe the issue.
+
+### Where can I find code examples?
+Throughout this documentation. Every feature page includes real Dart code snippets with explanations.
+
+### Is the documentation available offline?
+Yes. This documentation site is included in your download package. Run it locally with `npm start` in the `hana_go_docs/` directory.

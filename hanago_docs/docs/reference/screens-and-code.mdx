@@ -1,0 +1,955 @@
+---
+sidebar_position: 2
+title: Screens & Code
+description: Every GreenCart screen paired with its source code - code screenshot on the left, app screenshot on the right.
+---
+
+import ZoomableImage from '@site/src/components/ZoomableImage';
+
+# Screens & Code
+
+Every screen in **GreenCart** paired with its source code. Add your code screenshots to `static/img/screenshots/code/` and app screenshots to `static/img/screenshots/`.
+
+---
+
+## Splash & Onboarding
+
+### 1. Splash Screen
+
+> This is the first screen users see. It has a green gradient background with the GreenCart logo in the center. The app loads for about 2 seconds, then moves to the onboarding screen.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/splash_code.png" alt="Splash Code - Click to zoom" width={700} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/splash.png" alt="Splash Screen" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 2. Onboarding Page 1
+
+> New users see this after the splash. It shows a big image with a fade effect, the text "Welcome to GreenCart," and two buttons. One goes to login, the other continues to the next onboarding slide.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/onboarding_1_code.png" alt="Onboarding 1 Code - Click to zoom" width={700} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/onboarding_1.png" alt="Onboarding 1" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 3. Onboarding Page 2
+
+> The second onboarding slide has a green background with an illustration and the text "All in one place." A Get Started button takes users to the Welcome screen to sign up or log in.
+
+<div style={{display: 'grid', gridTemplateColumns: '3fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/onboarding_2_code.png" alt="Onboarding 2 Code - Click to zoom" width={1000} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/onboarding_2.png" alt="Onboarding 2" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+## Authentication
+
+### 4. Welcome Screen
+
+> After onboarding, users see this welcome screen with the GreenCart logo and two big buttons. Login for returning users and Register for new users. Small text at the bottom about terms and conditions.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/welcome_code.png" alt="Welcome Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/welcome.png" alt="Welcome" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 5. Login
+
+> This is where users enter their credentials. It has a green header that says "Welcome Back!" and a white card below with tabs for Phone Number or Email login. Users can also log in with Google or Apple.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/login_code.png" alt="Login Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/login.png" alt="Login" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 6. Register
+
+> New users fill out this form to create their account. It has the same layout as login but with extra fields for full name, phone number, and password. A link at the bottom goes to the login page for existing users.
+
+<div style={{display: 'grid', gridTemplateColumns: '3fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/register_code.png" alt="Register Code - Click to zoom" width={1000} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/register.png" alt="Register" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 7. Forgot Password
+
+> When users forget their password, they land here. They pick whether to receive the reset code via Email or Phone Number, then tap Send Code. Simple and quick.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/forgot_password_code.png" alt="Forgot Password Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/forgot_password.png" alt="Forgot Password" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 8. OTP Verification
+
+> After requesting a password reset, users enter the 6-digit code they received. Individual boxes for each digit with a countdown timer and a Resend button if the code doesn't arrive.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/otp_code.png" alt="OTP Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/otp.png" alt="OTP Verification" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 9. New Password
+
+> The last step in password recovery. Users type their new password twice. Once in the New Password field and once in the Confirm field. Then tap Save Changes to update it.
+
+<div style={{display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'left'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/new_password_code.png" alt="New Password Code - Click to zoom" width={800} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/new_password.png" alt="New Password" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+## Home Screen
+
+### 10. Home (Full)
+
+> This is the main screen users see every time they open the app. It has a search bar at the top, category chips, a big hero banner with deals, limited time offers, product lists by category, and AI recommendations. All in one scrollable page.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/home_code.png" alt="Home Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/home.png" alt="Home" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 11. Home - Hero Banner
+
+> The big banner at the top of the home screen that rotates through promotional offers. It shows seasonal deals with a gradient overlay and page indicators so users know there are more slides.
+
+<div style={{display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/home_banner_code.png" alt="Home Banner Code - Click to zoom" width={750} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/home_banner.png" alt="Home Banner" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 12. Home - Categories
+
+> A horizontal row of category chips right below the hero banner. Users can tap on Vegetables, Fruits, Dairy, or any other category to jump straight to that product list.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/home_categories_code.png" alt="Home Categories Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/home_categories.png" alt="Home Categories" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 13. Home - Offers
+
+> Limited time offer cards that scroll horizontally with discount badges. Each card shows a product image with a dark gradient overlay and text. Designed to catch the eye and create urgency.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/home_offers_code.png" alt="Home Offers Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/home_offers.png" alt="Home Offers" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 14. Home - AI Strip
+
+> A row of AI-powered recommendation chips on the home screen. Hana AI suggests products based on what the user usually buys. This makes the shopping experience feel personal.
+
+<div style={{display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/home_ai_code.png" alt="Home AI Code - Click to zoom" width={750} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/home_ai.png" alt="Home AI" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+## Product Catalog
+
+### 15. Category View
+
+> Users tap on a category from the home screen and land here. It has a search bar, category tabs to switch between subcategories, and a grid of products that match the selected category.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/category_code.png" alt="Category Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/category.png" alt="Category" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 16. Product List
+
+> This is where all products in a category are displayed. Users can filter by price, sort by popularity, and switch between grid and list views. The header changes color based on the category. Green for vegetables, orange for fruits, and so on.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/product_list_code.png" alt="Product List Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/product_list.png" alt="Product List" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 17. Product Details
+
+> When a user taps on any product, this screen opens with a full image carousel, product name and price, pack size options, related products, and a sticky Add to Cart bar at the bottom.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/product_details_code.png" alt="Product Details Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/product_details.png" alt="Product Details" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 18. All Products
+
+> A complete list of everything in the store with a search bar and category filter chips. Users can browse the entire catalog and see how many products match their search.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/all_products_code.png" alt="All Products Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/all_products.png" alt="All Products" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+## Hana AI
+
+### 19. AI Chat (Text)
+
+> Hana AI's main chat screen where users can type questions and get instant answers. The screen has a gradient background, chat bubbles for conversation history, and a text input bar at the bottom.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/hana_ai_code.png" alt="Hana AI Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/hana_ai.png" alt="Hana AI" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 20. AI Voice Input
+
+> Instead of typing, users can tap the mic button and speak to Hana AI. The app uses speech recognition to convert the voice into text, so users can ask for product recommendations hands-free.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/hana_ai_voice_code.png" alt="Hana AI Voice Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/hana_ai_voice.png" alt="Hana AI Voice" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 21. AI Product Card
+
+> When Hana AI recommends a product, it shows up as a small card inside the chat. The card has the product image, name, price, and an Add button. Users can add items to their cart without leaving the chat.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/ai_product_card_code.png" alt="AI Product Card Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/ai_product_card.png" alt="AI Product Card" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+## Cart & Checkout
+
+### 22. Cart View
+
+> The shopping cart shows all items the user has added. Each item has a quantity stepper to increase or decrease the count. The bottom shows a price breakdown with subtotal, delivery fee, and total. A Proceed to Checkout button moves forward.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/cart_code.png" alt="Cart Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/cart.png" alt="Cart" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 23. Checkout
+
+> The final step before placing an order. Users review their delivery address, pick a date and time, choose a payment method, apply a promo code if they have one, and tap Place Order to confirm.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/checkout_code.png" alt="Checkout Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/checkout.png" alt="Checkout" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 24. Date & Time Picker
+
+> A dedicated screen for choosing when the order should arrive. Users pick a date from a calendar and a time from a scroll wheel. The app only shows available slots so there's no confusion.
+
+<div style={{display: 'grid', gridTemplateColumns: '2.5fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/date_time_code.png" alt="Date Time Code - Click to zoom" width={900} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/date_time.png" alt="Date Time" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 25. Order Confirmed
+
+> The success screen after an order is placed. It shows a gold checkmark animation, the order number, and buttons to View Order or Share. Users feel confident their order went through.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/order_confirmed_code.png" alt="Order Confirmed Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/order_confirmed.png" alt="Order Confirmed" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+## Orders & Tracking
+
+### 26. My Orders
+
+> A list of all past and current orders with status badges. Order Placed, Out for Delivery, Delivered, or Cancelled. Users tap on any order to see the full details and tracking information.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/my_orders_code.png" alt="My Orders Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/my_orders.png" alt="My Orders" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 27. Track Order
+
+> Real-time order tracking with a vertical timeline showing each step. Order Placed, Processing, Packed, Shipped, and Delivered. The current step is highlighted in green so users know exactly where their order is.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/track_order_code.png" alt="Track Order Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/track_order.png" alt="Track Order" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+## Wishlist
+
+### 28. Wishlist
+
+> A grid of products the user has saved for later. Each product has a heart icon to remove it and a quick add-to-cart button. If the wishlist is empty, a friendly illustration encourages users to start browsing.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/wishlist_code.png" alt="Wishlist Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/wishlist.png" alt="Wishlist" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+## Settings
+
+### 29. Settings Hub
+
+> The main settings screen with the user's profile card at the top, quick action buttons for Orders and Cart, and a list of menu items like Account, Delivery Address, Payment Method, Notifications, and Language.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/settings_code.png" alt="Settings Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/settings.png" alt="Settings" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 30. Account / Profile
+
+> Where users manage their personal information. Name, phone number, email, date of birth, and profile photo. A Save Changes button at the bottom updates everything at once.
+
+<div style={{display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/account_code.png" alt="Account Code - Click to zoom" width={750} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/account.png" alt="Account" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 31. Delivery Address
+
+> A list of saved delivery addresses with options to add, edit, or delete. Users can set a default address so the app remembers where to deliver their orders.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/delivery_address_code.png" alt="Delivery Address Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/delivery_address.png" alt="Delivery Address" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 32. Payment Method
+
+> Where users manage their payment options. Saved Visa and Mastercard cards with logos, plus a Cash on Delivery option. Users can add new cards or switch between payment methods.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/payment_method_code.png" alt="Payment Method Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/payment_method.png" alt="Payment Method" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 33. Notifications
+
+> A list of all notifications with filter tabs for All, Unread, and Read. Users can tap on any notification to see the full details. Order updates, promotional offers, and app announcements.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/notifications_code.png" alt="Notifications Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/notifications.png" alt="Notifications" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 34. Language
+
+> A list of supported languages with flag icons. Users tap on their preferred language and the entire app switches instantly. The choice is saved so it persists across sessions.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/language_code.png" alt="Language Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/language.png" alt="Language" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 35. Coupons
+
+> A wallet of available coupons showing discount amounts, coupon codes, minimum purchase requirements, and expiry dates. Users can copy a code or tap Apply to use it at checkout.
+
+<div style={{display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/coupons_code.png" alt="Coupons Code - Click to zoom" width={750} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/coupons.png" alt="Coupons" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 36. FAQ
+
+> Frequently asked questions organized by topic. Getting Started, Orders, Delivery, Hana AI, and Account. Each question expands to show the answer, making it easy to find help.
+
+<div style={{display: 'grid', gridTemplateColumns: '2fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/faq_code.png" alt="FAQ Code - Click to zoom" width={750} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/faq.png" alt="FAQ" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 37. Change Password
+
+> A security screen where users enter their current password and create a new one. Simple three-field form with a Update Password button at the bottom.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/change_password_code.png" alt="Change Password Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/change_password.png" alt="Change Password" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 38. Edit Address
+
+> An editing form for updating a saved delivery address. Label, street, city, state, and zip code fields that users fill out and save.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/edit_address_code.png" alt="Edit Address Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/edit_address.png" alt="Edit Address" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 39. Notification Details
+
+> The full view of a single notification. Title, timestamp, and body text. Users land here when they tap on a notification from the list.
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/notification_details_code.png" alt="Notification Details Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/notification_details.png" alt="Notification Details" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+### 40. Privacy and Sharing
+
+> A settings page with three sections: Privacy Policy (view policy, manage data), Sharing (share app, rate us, refer a friend), and Legal (terms of service, open source licenses).
+
+<div style={{display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start'}}>
+<div style={{textAlign: 'center'}}>
+
+#### Code
+
+<ZoomableImage src="/img/screenshots/code/privacy_sharing_code.png" alt="Privacy and Sharing Code - Click to zoom" width={600} />
+
+</div>
+<div style={{textAlign: 'center'}}>
+
+#### Frontend
+
+<img src="/img/screenshots/privacy_sharing.png" alt="Privacy and Sharing" style={{width: '100%', height: '400px', objectFit: 'contain'}} />
+
+</div>
+</div>
+
+---
+
+:::tip Adding Your Screenshots
+Place your code screenshots in `static/img/screenshots/code/` and app screenshots in `static/img/screenshots/` using the filenames shown above. The images will render in the grid layouts automatically.
+:::

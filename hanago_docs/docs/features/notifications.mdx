@@ -1,0 +1,80 @@
+---
+sidebar_position: 10
+title: Notifications
+description: Push notifications and in-app notification center.
+---
+
+import ZoomableImage from '@site/src/components/ZoomableImage';
+
+# Notifications
+
+GreenCart includes push notifications and an in-app notification center.
+
+---
+
+## Notification Center
+
+View all your notifications in one place.
+
+### Features
+- **Tabs** — All, Orders, Promotions, System
+- **Unread badge** — count of unread notifications per tab
+- **Notification card** — icon, title, message, timestamp
+- **Swipe to dismiss** — mark as read or delete
+- **Mark all as read** — button in app bar
+- **Pull to refresh** — get latest notifications
+- **Tap to view** — open full notification details
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/notifications.png" alt="Notifications" width={280} /><br/><em>Notifications</em></div>
+</div>
+
+---
+
+## Notification Details
+
+Full-page view of a single notification.
+
+- Large banner image (if available)
+- Full title and body text
+- Received timestamp
+- Action button (e.g., "View Order", "Shop Now")
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/notification_details.png" alt="Notification Details" width={280} /><br/><em>Notification Details</em></div>
+</div>
+
+---
+
+## Notification Categories
+
+| Category | Icon | Examples |
+|----------|------|----------|
+| Order | Box | Order confirmed, shipped, delivered |
+| Promo | Tag | Sales, discounts, new arrivals |
+| System | Gear | App updates, maintenance |
+| AI | Robot | Personalized suggestions |
+
+---
+
+## Push Notifications
+
+GreenCart uses **Firebase Cloud Messaging (FCM)** for push notifications.
+
+### Setup Steps
+1. Create a Firebase project
+2. Add your Android and iOS apps
+3. Download `google-services.json` (Android) and `GoogleService-Info.plist` (iOS)
+4. Enable Cloud Messaging in Firebase Console
+
+### Sending Notifications
+Use the Firebase Console to send notifications:
+1. Go to Cloud Messaging
+2. Click "Send your first message"
+3. Enter title and body
+4. Select your app
+5. Send to test device or all users
+
+---
+
+

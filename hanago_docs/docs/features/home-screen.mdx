@@ -1,0 +1,112 @@
+---
+sidebar_position: 2
+title: Home Screen
+description: The GreenCart home screen — hero banner, categories, offers, AI recommendations, and daily purchases.
+---
+
+import ZoomableImage from '@site/src/components/ZoomableImage';
+
+# Home Screen
+
+The Home Screen is the main screen users see after logging in. It has **5 sections** that scroll vertically.
+
+---
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/home.png" alt="Home Screen Full" width={280} /><br/><em>Home Screen</em></div>
+</div>
+
+---
+
+## Sections
+
+### 1. Hero Banner
+
+Auto-sliding promotional banners at the top.
+
+- Slides change every 3 seconds
+- Swipe left/right manually
+- Dots show current slide
+- Each banner has a title, subtitle, and "Shop Now" button
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/home_banner.png" alt="Hero Banner" width={280} /><br/><em>Hero Banner</em></div>
+</div>
+
+---
+
+### 2. Quick Categories
+
+8 grocery categories in a horizontal scrollable row.
+
+| # | Category |
+|---|----------|
+| 1 | Vegetables |
+| 2 | Fruits |
+| 3 | Dairy |
+| 4 | Pantry |
+| 5 | Snacks |
+| 6 | Beverages |
+| 7 | Frozen |
+| 8 | Household |
+
+Tap any category to see products in that category.
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/home_categories.png" alt="Quick Categories" width={280} /><br/><em>Quick Categories</em></div>
+</div>
+
+---
+
+### 3. Limited Offers
+
+Products with active discounts displayed in a horizontal scroll.
+
+Each card shows:
+- Product image
+- Product name and weight
+- Original price (crossed out)
+- Discounted price
+- Discount percentage badge
+- Add to cart button
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/home_offers.png" alt="Limited Offers" width={280} /><br/><em>Limited Offers</em></div>
+</div>
+
+---
+
+### 4. AI Recommendations
+
+Smart product suggestions from the Hana AI engine.
+
+- Horizontal scroll of product cards
+- "AI Pick" badge on each card
+- Tap to view product details
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/home_ai.png" alt="AI Recommendations" width={280} /><br/><em>AI Recommendations</em></div>
+</div>
+
+---
+
+### 5. Daily Purchase
+
+Items the user frequently buys for quick re-order.
+
+- Compact card layout
+- Large "Add" button
+- One-tap re-order
+
+---
+
+## Customizing the Home Screen
+
+You can reorder or hide sections:
+
+1. **Reorder** — Move the section widgets in `home_view.dart`
+2. **Hide a section** — Comment out or remove the section widget
+
+---
+
+

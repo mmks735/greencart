@@ -1,0 +1,295 @@
+---
+sidebar_position: 1
+title: Installation
+description: Step-by-step guide to install Flutter, set up your environment, and get GreenCart running on Android and iOS.
+---
+
+# Installation Guide
+
+This guide walks you through a complete environment setup — from installing Flutter to running **GreenCart** on a real device or emulator.
+
+:::tip Already have Flutter installed?
+Skip straight to the **[Quick Start →](./quick-start)** and be running in under 5 minutes.
+:::
+
+---
+
+## At a Glance
+
+| Step | What You'll Do |
+|------|----------------|
+| **1** | Install Git |
+| **2** | Install Flutter SDK |
+| **3** | Install Android Studio |
+| **4** | Set Up Android SDK |
+| **5** | Run Flutter Doctor |
+| **6** | Set up Emulator or Device |
+| **7** | Install VS Code + Extensions |
+
+---
+
+## Step 1 — Install Git
+
+Git is required to manage your project files.
+
+1. Download Git from [git-scm.com](https://git-scm.com/download/win)
+
+![Git Download Page](/img/screenshots/installation/git_download.png)
+
+2. Run the installer with the **default settings** — no changes needed.
+
+3. Verify the installation:
+
+```bash
+git --version
+```
+
+Expected output: `git version 2.x.x`
+
+![Git Version Check](/img/screenshots/installation/git_version.png)
+
+---
+
+## Step 2 — Install Flutter SDK
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+<Tabs>
+  <TabItem value="windows" label="Windows" default>
+
+1. Download the Flutter SDK from [flutter.dev](https://docs.flutter.dev/get-started/install/windows)
+
+![Flutter SDK Download](/img/screenshots/installation/flutter_download.png)
+
+2. Extract the zip to `C:\flutter`
+
+![Extract Flutter](/img/screenshots/installation/flutter_extract.png)
+
+3. Add Flutter to your PATH:
+   - Search for **"Edit the system environment variables"** in Windows Search
+   - Click **Environment Variables**
+   - Under **System Variables**, select **Path** → **Edit** → **New**
+   - Add `C:\flutter\bin` and click **OK**
+
+![Add Flutter to PATH](/img/screenshots/installation/flutter_path_windows.png)
+
+4. Open a **new terminal** and verify:
+
+```bash
+flutter --version
+```
+
+![Flutter Version Output](/img/screenshots/installation/flutter_version_check.png)
+
+  </TabItem>
+  <TabItem value="macos" label="macOS">
+
+```bash
+# Install via Homebrew (recommended)
+brew install --cask flutter
+
+# Or manually — add to ~/.zshrc or ~/.bash_profile
+export PATH="$HOME/flutter/bin:$PATH"
+
+# Verify
+flutter --version
+```
+
+  </TabItem>
+  <TabItem value="linux" label="Linux">
+
+```bash
+# Download the .tar.xz from flutter.dev and extract
+tar xf flutter_linux_*.tar.xz
+export PATH="$PATH:$(pwd)/flutter/bin"
+
+# Verify
+flutter --version
+```
+
+  </TabItem>
+</Tabs>
+
+---
+
+## Step 3 — Install Android Studio
+
+Android Studio provides the Android SDK, emulator, and build tools needed by Flutter.
+
+1. Download from [developer.android.com/studio](https://developer.android.com/studio)
+
+![Android Studio Download](/img/screenshots/installation/android_studio_download.png)
+
+2. Run the installer and follow the setup wizard with default settings.
+
+3. On first launch, Android Studio will download required SDK components — let it complete.
+
+![Android Studio SDK Download](/img/screenshots/installation/android_studio_sdk_download.png)
+
+:::note
+After installation, open **Android Studio → SDK Manager** and make sure **Android SDK Platform-Tools** and at least one **SDK Platform (API 34+)** are installed.
+:::
+
+---
+
+## Step 4 — Set Up Android SDK
+
+After installing Android Studio, you need to configure the Android SDK:
+
+1. Open **Android Studio**
+
+2. Go to **More Actions** (or **Configure**) → **SDK Manager**
+
+![Open SDK Manager](/img/screenshots/installation/sdk_manager_open.png)
+
+3. Select the **SDK Tools** tab
+
+4. Check **Android SDK Command-line Tools (latest)**
+
+![Select Command-line Tools](/img/screenshots/installation/sdk_commandline_tools.png)
+
+5. Click **Apply** → **OK** to install
+
+:::note
+This step is required for Flutter to properly detect your Android toolchain.
+:::
+
+---
+
+## Step 5 — Run Flutter Doctor
+
+`flutter doctor` checks your entire environment and tells you exactly what's missing.
+
+```bash
+flutter doctor
+```
+
+![Flutter Doctor Command](/img/screenshots/installation/flutter_doctor_command.png)
+
+A fully healthy output looks like this:
+
+```
+[✓] Flutter (Channel stable, 3.22.x, Dart 3.x)
+[✓] Android toolchain – develop for Android devices
+[✓] Android Studio (version 2024.x)
+[✓] VS Code (version 1.9x.x)
+[✓] Connected device (1 available)
+[✓] Network resources
+```
+
+![Flutter Doctor Output](/img/screenshots/installation/flutter_doctor_output.png)
+
+:::warning Common Issues
+| Issue | Fix |
+|-------|-----|
+| Android licenses not accepted | Run `flutter doctor --android-licenses` and accept all |
+| Xcode not found (macOS) | Install Xcode from the Mac App Store, then run `sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer` |
+| CocoaPods missing (macOS) | Run `sudo gem install cocoapods` |
+| `flutter` not found | Make sure `C:\flutter\bin` is in your PATH and you opened a new terminal |
+:::
+
+---
+
+## Step 6 — Set Up an Emulator or Device
+
+You need a device to run the app. Choose one option:
+
+<Tabs>
+  <TabItem value="android-emulator" label="Android Emulator" default>
+
+1. Open **Android Studio**
+2. Click **Device Manager** (icon in the right sidebar or top toolbar)
+
+![Open Device Manager](/img/screenshots/installation/android_studio_device_manager.png)
+
+3. Click **Create Device**
+
+![Create Device Button](/img/screenshots/installation/create_device_button.png)
+
+4. Select a hardware profile (e.g., **Pixel 8**) → Choose a system image **(API 34+)** → Click **Finish**
+
+![Select Device Profile](/img/screenshots/installation/select_device.png)
+
+5. Click the **▶ Play** button to launch the emulator
+
+![Emulator Running](/img/screenshots/installation/emulator_running.png)
+
+  </TabItem>
+  <TabItem value="ios-simulator" label="iOS Simulator (macOS only)">
+
+```bash
+# List available simulators
+xcrun simctl list devices
+
+# Open Simulator app
+open -a Simulator
+```
+
+Select a device from **File → Open Simulator** within the Simulator app.
+
+  </TabItem>
+  <TabItem value="physical-device" label="Physical Device">
+
+**Android:**
+1. On your phone, go to **Settings → About Phone**
+2. Tap **Build Number** 7 times to enable Developer Options
+3. Go to **Settings → Developer Options** and enable **USB Debugging**
+4. Connect your phone via USB and accept the trust prompt on your device
+
+**iOS:**
+1. Connect your iPhone via USB
+2. Tap **Trust** on your device when prompted
+3. Open Xcode once to register the device
+
+  </TabItem>
+</Tabs>
+
+---
+
+## Step 7 — Install VS Code + Extensions
+
+VS Code is the recommended editor for Flutter development.
+
+1. Download VS Code from [code.visualstudio.com](https://code.visualstudio.com/)
+
+![VS Code Download](/img/screenshots/installation/vscode_download.png)
+
+2. Install and launch VS Code.
+
+3. Open Extensions (`Ctrl+Shift+X`) and install the following:
+
+| Extension | Purpose |
+|-----------|---------|
+| **Flutter** | Core Flutter support (debugging, run, hot reload) |
+| **Dart** | Dart language support |
+| **Flutter Widget Snippets** | Code snippets for common widgets |
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1.5rem', flexWrap: 'nowrap', marginTop: '1.5rem', marginBottom: '2rem'}}>
+
+<div style={{textAlign: 'center', flex: '1 1 0', minWidth: '0'}}>
+<div style={{borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', height: '700px'}}>
+<img src="/img/screenshots/installation/flutter_extension.png" alt="Flutter Extension Install" style={{width: '100%', height: '100%', objectFit: 'contain', display: 'block', pointerEvents: 'none'}} />
+</div>
+<p style={{marginTop: '0.75rem', fontWeight: '700', fontSize: '1rem'}}>Flutter Extension</p>
+</div>
+
+<div style={{textAlign: 'center', flex: '1 1 0', minWidth: '0'}}>
+<div style={{borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', height: '700px'}}>
+<img src="/img/screenshots/installation/dart_extension.png" alt="Dart Extension Install" style={{width: '100%', height: '100%', objectFit: 'contain', display: 'block', pointerEvents: 'none'}} />
+</div>
+<p style={{marginTop: '0.75rem', fontWeight: '700', fontSize: '1rem'}}>Dart Extension</p>
+</div>
+
+<div style={{textAlign: 'center', flex: '1 1 0', minWidth: '0'}}>
+<div style={{borderRadius: '16px', overflow: 'hidden', boxShadow: '0 4px 20px rgba(0,0,0,0.1)', height: '700px'}}>
+<img src="/img/screenshots/installation/additional_extensions.png" alt="Additional Extensions" style={{width: '100%', height: '100%', objectFit: 'contain', display: 'block', pointerEvents: 'none'}} />
+</div>
+<p style={{marginTop: '0.75rem', fontWeight: '700', fontSize: '1rem'}}>All Extensions Installed</p>
+</div>
+
+</div>
+
+
+
+

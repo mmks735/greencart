@@ -1,0 +1,69 @@
+---
+sidebar_position: 7
+title: Orders & Tracking
+description: Order history and step-by-step delivery tracking.
+---
+
+import ZoomableImage from '@site/src/components/ZoomableImage';
+
+# Orders and Tracking
+
+View your order history and track deliveries in real-time.
+
+---
+
+## My Orders
+
+A list of all past and current orders.
+
+### Each Order Shows
+- Order number and date
+- Product thumbnails (up to 3)
+- Item count and total amount
+- Status badge with color
+
+### Status Colors
+
+| Status | Color |
+|--------|-------|
+| Pending | Yellow |
+| Processing | Blue |
+| Shipped | Orange |
+| Delivered | Green |
+| Cancelled | Red |
+
+Tap any order to track its progress.
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/my_orders.png" alt="My Orders" width={280} /><br/><em>My Orders</em></div>
+</div>
+
+---
+
+## Track Order
+
+Step-by-step order tracking with animated timeline.
+
+### Tracking Steps
+
+```
+✓ Order Placed        — Mon, 10 Jun 2026 09:15 AM
+✓ Order Confirmed     — Mon, 10 Jun 2026 09:20 AM
+✓ Packed              — Mon, 10 Jun 2026 11:00 AM
+● Out for Delivery    — Mon, 10 Jun 2026 02:30 PM
+○ Delivered           — Expected: Mon, 10 Jun 2026 05:00 PM
+```
+
+### Each Step Shows
+- **Checkmark** — completed step
+- **Spinner** — current step
+- **Circle** — pending step
+- **Timestamp** — when completed
+- **Connecting line** — solid (done) or dashed (pending)
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/track_order.png" alt="Track Order" width={280} /><br/><em>Track Order</em></div>
+</div>
+
+---
+

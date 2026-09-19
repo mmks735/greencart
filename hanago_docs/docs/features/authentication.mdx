@@ -1,0 +1,118 @@
+---
+sidebar_position: 3
+title: Authentication
+description: Login, Register, Forgot Password, OTP Verification, and New Password screens.
+---
+
+import ZoomableImage from '@site/src/components/ZoomableImage';
+
+# Authentication
+
+GreenCart includes a **complete login flow** — from first launch through password recovery.
+
+---
+
+## Auth Flow
+
+```
+App Launch → Splash Screen
+                ↓
+        First time? → Onboarding → Welcome
+        Returning?  → Home Screen (auto-login)
+                ↓
+            Welcome Screen
+           ↓           ↓
+         Login       Register
+           ↓           ↓
+       [Success]   [Success]
+           └─────┬─────┘
+                 ↓
+             Home Screen
+
+Forgot Password:
+Login → "Forgot Password?" → Enter Email → OTP → New Password → Login
+```
+
+---
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/welcome.png" alt="Welcome Screen" width={280} /><br/><em>Welcome</em></div>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/login.png" alt="Login Screen" width={280} /><br/><em>Login</em></div>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/register.png" alt="Register Screen" width={280} /><br/><em>Register</em></div>
+</div>
+
+---
+
+## Screens
+
+### Welcome Screen
+
+The landing screen after onboarding with two buttons:
+- **Sign In** — goes to Login
+- **Create Account** — goes to Register
+
+---
+
+### Login Screen
+
+- Email input with validation
+- Password input with show/hide toggle
+- Country code picker for phone login
+- "Remember Me" toggle
+- "Forgot Password?" link
+- Social login buttons (ready to connect)
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/login.png" alt="Login Screen" width={280} /><br/><em>Login</em></div>
+</div>
+
+---
+
+### Register Screen
+
+- Full Name
+- Email Address
+- Phone Number (with country code)
+- Password and Confirm Password
+- Terms and Conditions checkbox
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/register.png" alt="Register Screen" width={280} /><br/><em>Register</em></div>
+</div>
+
+---
+
+### Forgot Password
+
+Enter your email address to receive a password reset code.
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/forgot_password.png" alt="Forgot Password" width={280} /><br/><em>Forgot Password</em></div>
+</div>
+
+---
+
+### OTP Verification
+
+- 6-digit PIN input
+- Auto-submit when complete
+- Resend button with 60-second timer
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/otp.png" alt="OTP Verification" width={280} /><br/><em>OTP Verification</em></div>
+</div>
+
+---
+
+### New Password
+
+- New password field with strength indicator
+- Confirm password field
+- Success navigates back to Login
+
+<div style={{display: 'flex', justifyContent: 'center', gap: '1rem', flexWrap: 'wrap', margin: '1.5rem 0'}}>
+  <div style={{textAlign: 'center'}}><img src="/img/screenshots/new_password.png" alt="New Password" width={280} /><br/><em>New Password</em></div>
+</div>
+
+---
+

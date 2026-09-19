@@ -1,0 +1,129 @@
+---
+sidebar_position: 7
+title: Liquid Glass UI
+description: iOS 26-style liquid glass rendering in GreenCart — where it's used, how to customize it, and how to disable it.
+---
+
+import ZoomableImage from '@site/src/components/ZoomableImage';
+
+# Liquid Glass UI
+
+**GreenCart** includes an iOS 26-style **liquid glass** rendering effect, powered by the [`liquid_glass_renderer`](https://pub.dev/packages/liquid_glass_renderer) package. It gives buttons and banners a frosted, translucent glass look with realistic light refraction.
+
+---
+
+## Where It's Used
+
+| Location | Widget | How |
+|----------|--------|-----|
+| Hero banner "Shop Now" button | `HomeHeroBanner` | `HanaButton(glassy: true)` |
+| Middle banner "Shop Now" button | `HomeMiddleBanner` | `HanaButton(glassy: true, glassColor: ...)` |
+| Any `HanaButton` with `glassy: true` | `HanaButton` | Pass `glassy: true` to the constructor |
+
+---
+
+## The Wrapper Component
+
+The glass effect is encapsulated in a single reusable component:
+
+**`lib/components/liquid_glass_renderer.dart`**
+
+```dart
+LiquidGlassRenderer(
+  borderRadius: 15,
+  child: myWidget,
+  // Optional overrides:
+  glassColor: Colors.white.withValues(alpha: 0.15),
+  frost: 16.0,      // Blur / frost intensity
+  refraction: 45.0, // Light distortion amount
+)
+```
+
+### Parameters
+
+| Parameter | Default | Effect |
+|-----------|---------|--------|
+| `borderRadius` | *(required)* | Corner rounding of the glass shape |
+| `glassColor` | `Colors.white @ 15%` | Tint of the glass surface |
+| `frost` | `16.0` | Frosted-glass blur intensity — higher = more blur |
+| `refraction` | `45.0` | Light refraction distortion — higher = stronger lens effect |
+
+The underlying `LiquidGlassSettings.figma(...)` also uses these fixed values:
+
+| Setting | Value | Description |
+|---------|-------|-------------|
+| `depth` | `25.0` | Physical thickness of the glass lens |
+| `dispersion` | `12.0` | Chromatic colour spread at the glass edges |
+| `lightIntensity` | `90.0` | Specular highlight brightness |
+| `lightAngle` | `0.75π` | Light direction (top-left) |
+
+---
+
+## Using on a `HanaButton`
+
+The `HanaButton` component has a built-in `glassy` mode. Pass `glassy: true` and it wraps itself in `LiquidGlassRenderer` automatically:
+
+```dart
+HanaButton(
+  'Shop Now',
+  onTap: () {},
+  glassy: true,
+  size: HanaButtonSize.small,
+  height: 30.h,
+  borderRadius: 15.r,
+)
+```
+
+When `glassy: true`:
+- The button background uses `LiquidGlassRenderer` instead of a solid colour.
+- The text defaults to white.
+- You can still pass `backgroundColor` — it becomes the glass tint at 30% opacity.
+
+---
+
+## Customizing the Effect
+
+**To change the frost level globally**, edit `lib/components/liquid_glass_renderer.dart`:
+
+```dart
+frost: 16.0,  // ← Increase for more blur, decrease for clearer glass
+```
+
+**To change the refraction**, edit the same file:
+
+```dart
+refraction: 45.0,  // ← Increase for a stronger lens / fish-eye bend
+```
+
+**To change the glass tint on a specific button**, pass `backgroundColor`:
+
+```dart
+HanaButton(
+  'Checkout',
+  glassy: true,
+  backgroundColor: Colors.green,  // Glass tint becomes green @ 30% opacity
+  ...
+)
+```
+
+---
+
+## Disabling Liquid Glass
+
+To remove the effect entirely from a button, set `glassy: false` (the default):
+
+```dart
+HanaButton(
+  'Shop Now',
+  onTap: () {},
+  glassy: false,  // Falls back to solid primaryColor fill
+)
+```
+
+To remove it globally from all hero banner buttons, open the relevant widget file and set `glassy: false`.
+
+---
+
+:::info Package Version
+The project uses `liquid_glass_renderer: ^0.2.0-dev.4` (see `pubspec.yaml`). This is a pre-release package — check [pub.dev](https://pub.dev/packages/liquid_glass_renderer) for stable releases before upgrading.
+:::
