@@ -1,10 +1,12 @@
 import React, { useState, useRef } from 'react';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './ZoomableImage.module.css';
 
 export default function ZoomableImage({ src, alt, width = 600 }) {
   const [isZoomed, setIsZoomed] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });
   const imageRef = useRef(null);
+  const imageSrc = useBaseUrl(src);
 
   const handleMouseMove = (e) => {
     if (!imageRef.current) return;
@@ -24,7 +26,7 @@ export default function ZoomableImage({ src, alt, width = 600 }) {
       ref={imageRef}
     >
       <img 
-        src={src} 
+        src={imageSrc} 
         alt={alt} 
         className={styles.thumbnail}
       />
@@ -33,7 +35,7 @@ export default function ZoomableImage({ src, alt, width = 600 }) {
         <div 
           className={styles.magnifier}
           style={{
-            backgroundImage: `url(${src})`,
+            backgroundImage: `url(${imageSrc})`,
             backgroundPosition: `${mousePosition.x}% ${mousePosition.y}%`,
           }}
         />

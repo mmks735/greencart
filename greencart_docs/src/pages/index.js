@@ -255,7 +255,7 @@ function HomepageHeader() {
         {/* Left text column */}
         <div className={styles.heroContent}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1rem', flexWrap: 'wrap' }}>
-            <img src="/img/logo.png" alt="GreenCart Logo" style={{ width: '48px', height: '48px', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
+            <img src="/greencart/img/logo.png" alt="GreenCart Logo" style={{ width: '48px', height: '48px', borderRadius: '12px', boxShadow: '0 4px 12px rgba(0,0,0,0.15)' }} />
             <div className="badge badge--success" style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#10b981', border: '1px solid rgba(16, 185, 129, 0.3)', padding: '6px 16px', borderRadius: '20px', fontWeight: 600 }}>
               Next-Gen Grocery E-Commerce
             </div>
@@ -582,7 +582,7 @@ function HomepageHeader() {
                     {/* Chat Header */}
                     <div className={styles.chatHeader}>
                       <div className={styles.aiAvatar}>
-                        <img src="/img/logo.png" className={styles.aiAvatarImg} alt="Hana AI Logo" />
+                        <img src="/greencart/img/logo.png" className={styles.aiAvatarImg} alt="Hana AI Logo" />
                       </div>
                       <div className={styles.aiStatusBox}>
                         <span className={styles.aiName}>Hana AI Assistant</span>
@@ -740,7 +740,7 @@ function HomepageHeader() {
                     {/* User profile banner */}
                     <div className={styles.profileCard}>
                       <div className={styles.profileAvatar}>
-                        <img src="/img/profile_image.png" className={styles.profileAvatarImg} alt="Jane Doe" />
+                        <img src="/greencart/img/profile_image.png" className={styles.profileAvatarImg} alt="Jane Doe" />
                       </div>
                       <div className={styles.profileInfo}>
                         <span className={styles.profileName}>Jane Doe</span>
@@ -905,7 +905,7 @@ function HomepageHeader() {
                   onClick={() => setActiveTab('home')}
                 >
                   <span className={styles.navIcon}>
-                    <img src="/img/navi_icon/Home.svg" className={styles.navIconImg} alt="Home" />
+                    <img src="/greencart/img/navi_icon/Home.svg" className={styles.navIconImg} alt="Home" />
                   </span>
                   <span className={styles.navLabel}>Home</span>
                 </div>
@@ -914,7 +914,7 @@ function HomepageHeader() {
                   onClick={() => setActiveTab('category')}
                 >
                   <span className={styles.navIcon}>
-                    <img src="/img/navi_icon/category.svg" className={styles.navIconImg} alt="Category" />
+                    <img src="/greencart/img/navi_icon/category.svg" className={styles.navIconImg} alt="Category" />
                   </span>
                   <span className={styles.navLabel}>Category</span>
                 </div>
@@ -923,7 +923,7 @@ function HomepageHeader() {
                   onClick={() => setActiveTab('hana-ai')}
                 >
                   <span className={styles.navIcon}>
-                    <img src="/img/navi_icon/hanaai.svg" className={styles.navIconImg} alt="Hana AI" style={{ width: '22px', height: '22px' }} />
+                    <img src="/greencart/img/navi_icon/hanaai.svg" className={styles.navIconImg} alt="Hana AI" style={{ width: '22px', height: '22px' }} />
                   </span>
                   <span className={styles.navLabel}>Hana AI</span>
                 </div>
@@ -932,7 +932,7 @@ function HomepageHeader() {
                   onClick={() => setActiveTab('recipes')}
                 >
                   <span className={styles.navIcon}>
-                    <img src="/img/navi_icon/recipes.svg" className={styles.navIconImg} alt="Recipes" />
+                    <img src="/greencart/img/navi_icon/recipes.svg" className={styles.navIconImg} alt="Recipes" />
                   </span>
                   <span className={styles.navLabel}>Recipes</span>
                 </div>
@@ -941,7 +941,7 @@ function HomepageHeader() {
                   onClick={() => setActiveTab('profile')}
                 >
                   <span className={styles.navIcon}>
-                    <img src="/img/navi_icon/profile.svg" className={styles.navIconImg} alt="Profile" />
+                    <img src="/greencart/img/navi_icon/profile.svg" className={styles.navIconImg} alt="Profile" />
                     {cartCount > 0 && (
                       <span className={styles.navCartBadge}>{cartCount}</span>
                     )}

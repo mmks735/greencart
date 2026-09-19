@@ -18,7 +18,7 @@ This guide explains the project layout step by step. Each section includes a scr
 
 When you open the project, this is what you see — all folders and files in one place:
 
-<ZoomableImage src="/img/project-structure/architecture_overview.png" alt="Project overview" width={450} />
+<ZoomableImage src="/greencart/img/project-structure/architecture_overview.png" alt="Project overview" width={450} />
 
 
 | Folder / File | What It Is |
@@ -36,7 +36,7 @@ When you open the project, this is what you see — all folders and files in one
 
 Open this file first. It controls the app version, dependencies, and which image folders are included.
 
-<ZoomableImage src="/img/project-structure/pubspec_yaml_file.png" alt="pubspec.yaml overview" width={750} />
+<ZoomableImage src="/greencart/img/project-structure/pubspec_yaml_file.png" alt="pubspec.yaml overview" width={750} />
 
 
 | Section | Line | What to Change |
@@ -49,7 +49,7 @@ Open this file first. It controls the app version, dependencies, and which image
 Use `change_project_name` package to rename everything automatically. See **Automated Rename** below.
 :::
 
-<ZoomableImage src="/img/project-structure/pubspec_yaml_file1.png" alt="pubspec.yaml launcher icons" width={750} />
+<ZoomableImage src="/greencart/img/project-structure/pubspec_yaml_file1.png" alt="pubspec.yaml launcher icons" width={750} />
 
 
 | Section | What to Change |
@@ -58,14 +58,14 @@ Use `change_project_name` package to rename everything automatically. See **Auto
 | `adaptive_icon_background:` | Change background color for Android adaptive icon |
 | `adaptive_icon_foreground:` | Change foreground image for Android adaptive icon |
 
-<ZoomableImage src="/img/project-structure/pubspec_yaml_file2.png" alt="pubspec.yaml assets" width={750} />
+<ZoomableImage src="/greencart/img/project-structure/pubspec_yaml_file2.png" alt="pubspec.yaml assets" width={750} />
 
 
 | Section | What to Change |
 |---------|----------------|
 | `flutter: assets:` | Add new image folders here |
 
-<ZoomableImage src="/img/project-structure/pubspec_yaml_file3.png" alt="pubspec.yaml fonts and icons" width={750} />
+<ZoomableImage src="/greencart/img/project-structure/pubspec_yaml_file3.png" alt="pubspec.yaml fonts and icons" width={750} />
 
 
 | Section | What to Change |
@@ -78,7 +78,7 @@ Use `change_project_name` package to rename everything automatically. See **Auto
 
 This folder holds everything that is not code — pictures, icons, fonts, and language files.
 
-<ZoomableImage src="/img/project-structure/assets_resources.png" alt="Assets folder" width={450} />
+<ZoomableImage src="/greencart/img/project-structure/assets_resources.png" alt="Assets folder" width={450} />
 
 
 | Subfolder | What It Contains | Action |
@@ -91,7 +91,7 @@ This folder holds everything that is not code — pictures, icons, fonts, and la
 
 ### Icons Folder
 
-<ZoomableImage src="/img/project-structure/icons_folder.png" alt="Icons folder" width={450} />
+<ZoomableImage src="/greencart/img/project-structure/icons_folder.png" alt="Icons folder" width={450} />
 
 
 | Subfolder | What It Contains | Action |
@@ -104,7 +104,7 @@ This folder holds everything that is not code — pictures, icons, fonts, and la
 
 ### Translations Folder
 
-<ZoomableImage src="/img/project-structure/translations_folder.png" alt="Translations folder" width={450} />
+<ZoomableImage src="/greencart/img/project-structure/translations_folder.png" alt="Translations folder" width={450} />
 
 
 | File | Language | Action |
@@ -123,7 +123,7 @@ This folder holds everything that is not code — pictures, icons, fonts, and la
 
 This is the main folder. Every screen, button, and feature lives here.
 
-<ZoomableImage src="/img/project-structure/lib_source.png" alt="lib folder" width={450} />
+<ZoomableImage src="/greencart/img/project-structure/lib_source.png" alt="lib folder" width={450} />
 
 
 | Folder | What It Contains | Action |
@@ -145,7 +145,7 @@ This is the main folder. Every screen, button, and feature lives here.
 
 This is the very first file Flutter runs.
 
-<ZoomableImage src="/img/project-structure/main_dart_file.png" alt="main.dart" width={750} />
+<ZoomableImage src="/greencart/img/project-structure/main_dart_file.png" alt="main.dart" width={750} />
 
 
 | What It Does | Line | Action |
@@ -167,7 +167,7 @@ initialRoute: Routes.splashPage,
 
 This folder is the single source of truth for the app's visual design. Change a value here and it updates everywhere.
 
-<ZoomableImage src="/img/project-structure/constants_folder.png" alt="Constants folder" width={450} />
+<ZoomableImage src="/greencart/img/project-structure/constants_folder.png" alt="Constants folder" width={450} />
 
 
 | File | What It Controls | Action |
@@ -209,7 +209,7 @@ This folder is the single source of truth for the app's visual design. Change a 
 
 Models define what a piece of data looks like. They are blueprints, not the data itself.
 
-<ZoomableImage src="/img/project-structure/models_folder.png" alt="Models folder" width={450} />
+<ZoomableImage src="/greencart/img/project-structure/models_folder.png" alt="Models folder" width={450} />
 
 
 | Model | What It Describes | Action |
@@ -227,7 +227,7 @@ Models define what a piece of data looks like. They are blueprints, not the data
 
 ## Step 8: `data/` — Loading Product Data
 
-<ZoomableImage src="/img/project-structure/data_folder.png" alt="Data folder" width={450} />
+<ZoomableImage src="/greencart/img/project-structure/data_folder.png" alt="Data folder" width={450} />
 
 
 | Subfolder | What It Contains | Action |
@@ -269,7 +269,7 @@ Screens use the data
 
 Services handle things that happen behind the scenes.
 
-<ZoomableImage src="/img/project-structure/services_folder.png" alt="Services folder" width={400} />
+<ZoomableImage src="/greencart/img/project-structure/services_folder.png" alt="Services folder" width={400} />
 
 
 | Service | What It Does | Action |
@@ -288,7 +288,7 @@ Services handle things that happen behind the scenes.
 
 These are pre-built pieces used across many screens. Instead of building the same button 20 times, it is built once here and reused everywhere.
 
-<ZoomableImage src="/img/project-structure/components_folder.png" alt="Components folder" width={400} />
+<ZoomableImage src="/greencart/img/project-structure/components_folder.png" alt="Components folder" width={400} />
 
 
 | Component | What It Is | Used On | Action |
@@ -307,7 +307,7 @@ These are pre-built pieces used across many screens. Instead of building the sam
 
 This is the **largest folder**. Every screen the user sees is here.
 
-<ZoomableImage src="/img/project-structure/pages_folder.png" alt="Pages folder" width={400} />
+<ZoomableImage src="/greencart/img/project-structure/pages_folder.png" alt="Pages folder" width={400} />
 
 
 | Folder | What It Contains | Action |
@@ -351,7 +351,7 @@ Get.toNamed(Routes.myScreenView);
 
 Two files that connect screen names to actual screens:
 
-<ZoomableImage src="/img/project-structure/routes_folder.png" alt="Routes folder" width={400} />
+<ZoomableImage src="/greencart/img/project-structure/routes_folder.png" alt="Routes folder" width={400} />
 
 
 | File | What It Does | Action |
@@ -365,7 +365,7 @@ Two files that connect screen names to actual screens:
 
 The 5-tab bar at the bottom of the screen:
 
-<ZoomableImage src="/img/project-structure/navigator_folder.png" alt="Navigator folder" width={400} />
+<ZoomableImage src="/greencart/img/project-structure/navigator_folder.png" alt="Navigator folder" width={400} />
 
 
 
@@ -385,7 +385,7 @@ The 5-tab bar at the bottom of the screen:
 
 One file — `app.dart` — controls the overall look: button shapes, card styles, input field styles, and font.
 
-<ZoomableImage src="/img/project-structure/theme_folder.png" alt="Theme folder" width={400} />
+<ZoomableImage src="/greencart/img/project-structure/theme_folder.png" alt="Theme folder" width={400} />
 
 
 | File | What It Controls | Action |
@@ -400,9 +400,9 @@ One file — `app.dart` — controls the overall look: button shapes, card style
 
 ### Android
 
-<ZoomableImage src="/img/project-structure/anroid_folder.png" alt="Android folder details" width={750} />
+<ZoomableImage src="/greencart/img/project-structure/anroid_folder.png" alt="Android folder details" width={750} />
 
-<ZoomableImage src="/img/project-structure/android_folder1.png" alt="Android folder overview" width={750} />
+<ZoomableImage src="/greencart/img/project-structure/android_folder1.png" alt="Android folder overview" width={750} />
 
 
 | File | Line | What to Change |
@@ -412,7 +412,7 @@ One file — `app.dart` — controls the overall look: button shapes, card style
 
 ### iOS
 
-<ZoomableImage src="/img/project-structure/ios_folder.png" alt="iOS folder" width={750} />
+<ZoomableImage src="/greencart/img/project-structure/ios_folder.png" alt="iOS folder" width={750} />
 
 
 | File | Line | What to Change |
