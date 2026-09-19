@@ -29,20 +29,20 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: hanago_docs/package-lock.json
+          cache-dependency-path: greencart_docs/package-lock.json
 
       - name: Install dependencies
-        working-directory: ./hanago_docs
+        working-directory: ./greencart_docs
         run: npm ci
 
       - name: Build Docusaurus
-        working-directory: ./hanago_docs
+        working-directory: ./greencart_docs
         run: npm run build
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./hanago_docs/build
+          path: ./greencart_docs/build
 
       - name: Deploy to GitHub Pages
         id: deployment

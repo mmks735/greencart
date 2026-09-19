@@ -32,7 +32,7 @@
 
 | App / Platform | Domain / Category | Core Tech Stack | My Key Contributions | Case Study & Previews |
 | :--- | :--- | :--- | :--- | :---: |
-| **GreenCart (HanaGo)** | Smart Grocery & AI E-Commerce | Flutter, GetX, AI Voice/Chat, Glassmorphic UI | Full 26+ Screen UI, AI Shopping Assistant, Dynamic Cart & Checkout, Live Order Tracking | [👉 View Case Study](./projects/hanago/README.md) |
+| **GreenCart (HanaGo)** | Smart Grocery & AI E-Commerce | Flutter, GetX, AI Voice/Chat, Glassmorphic UI | Full 26+ Screen UI, AI Shopping Assistant, Dynamic Cart & Checkout, Live Order Tracking | [👉 View Case Study](./projects/greencart/README.md) |
 | **Vincy Rideshare (User & Driver)** | Real-time On-Demand Ride Sharing | Flutter, GetX, Dio, Google Maps SDK, WebSockets | Driver & Rider real-time GPS tracking, OTP Authentication, Fare Estimator, Ride Flow | *(Case Study Coming Soon)* |
 | **Jisr Healthcare & Telemedicine** | Healthcare & Patient Portal | Flutter, GetX, SVG Vectors, Telehealth UI | Patient appointment booking, Doctor schedules, Medical records, Prescription viewer | *(Case Study Coming Soon)* |
 | **NutriHealth & Metrics** | Health Monitoring & Vital Analytics | Flutter, GetX, FL Chart, SharedPreferences | Anatomical Body Map, Vital Trend Charts, Health Metric Logging, Local Persistence | *(Case Study Coming Soon)* |
@@ -45,14 +45,14 @@
 
 <div align="center">
 
-<img src="./assets/screenshots/hanago/home.png" width="220" alt="GreenCart Home"/>
-<img src="./assets/screenshots/hanago/hana_ai.png" width="220" alt="GreenCart AI Assistant"/>
-<img src="./assets/screenshots/hanago/cart.png" width="220" alt="GreenCart Cart"/>
-<img src="./assets/screenshots/hanago/track_order.png" width="220" alt="GreenCart Track Order"/>
+<img src="./assets/screenshots/greencart/home.png" width="220" alt="GreenCart Home"/>
+<img src="./assets/screenshots/greencart/hana_ai.png" width="220" alt="GreenCart AI Assistant"/>
+<img src="./assets/screenshots/greencart/cart.png" width="220" alt="GreenCart Cart"/>
+<img src="./assets/screenshots/greencart/track_order.png" width="220" alt="GreenCart Track Order"/>
 
 <br/><br/>
 
-[![Case Study](https://img.shields.io/badge/Read_Full_Case_Study-GreenCart-green?style=for-the-badge&logo=readme)](./projects/hanago/README.md)
+[![Case Study](https://img.shields.io/badge/Read_Full_Case_Study-GreenCart-green?style=for-the-badge&logo=readme)](./projects/greencart/README.md)
 [![Live Documentation](https://img.shields.io/badge/Live_Documentation-GitHub_Pages-blue?style=for-the-badge&logo=githubpages)](https://mmks735.github.io/greencart/)
 
 </div>
@@ -61,7 +61,7 @@
 * 🤖 **AI-Powered Shopping Assistant:** Conversational chat & voice recognition for instant product discovery and direct-to-cart operations.
 * 🛍️ **Complete E-Commerce Flow:** 26+ screens encompassing catalog browsing, search filters, cart with voucher logic, and multi-step checkout.
 * 🎨 **Glassmorphism Design:** Modern aesthetic with custom animations and smooth 60fps scrolling.
-* 📖 **[Explore Full GreenCart Case Study & UI Previews &rarr;](./projects/hanago/README.md)**
+* 📖 **[Explore Full GreenCart Case Study & UI Previews &rarr;](./projects/greencart/README.md)**
 
 ---
 

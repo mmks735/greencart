@@ -72,22 +72,22 @@ As a core Mobile Application Developer on this project at **AppStick**, my prima
 ### 🌟 Home Experience & Category Browsing
 | Welcome & Onboarding | Glassmorphic Home Feed | Category Catalog | Featured Deals & Offers |
 | :---: | :---: | :---: | :---: |
-| <img src="../../assets/screenshots/hanago/welcome.png" width="180"/> | <img src="../../assets/screenshots/hanago/home.png" width="180"/> | <img src="../../assets/screenshots/hanago/category.png" width="180"/> | <img src="../../assets/screenshots/hanago/home_offers.png" width="180"/> |
+| <img src="../../assets/screenshots/greencart/welcome.png" width="180"/> | <img src="../../assets/screenshots/greencart/home.png" width="180"/> | <img src="../../assets/screenshots/greencart/category.png" width="180"/> | <img src="../../assets/screenshots/greencart/home_offers.png" width="180"/> |
 
 ### 🤖 GreenCart AI Assistant (Text & Voice)
 | AI Home Entry | AI Chat Feed | Voice Interaction State | AI Recommended Product |
 | :---: | :---: | :---: | :---: |
-| <img src="../../assets/screenshots/hanago/home_ai.png" width="180"/> | <img src="../../assets/screenshots/hanago/hana_ai.png" width="180"/> | <img src="../../assets/screenshots/hanago/hana_ai_voice.png" width="180"/> | <img src="../../assets/screenshots/hanago/ai_product_card.png" width="180"/> |
+| <img src="../../assets/screenshots/greencart/home_ai.png" width="180"/> | <img src="../../assets/screenshots/greencart/hana_ai.png" width="180"/> | <img src="../../assets/screenshots/greencart/hana_ai_voice.png" width="180"/> | <img src="../../assets/screenshots/greencart/ai_product_card.png" width="180"/> |
 
 ### 🛒 Shopping, Cart & Checkout Flow
 | Product Details | Dynamic Cart | Checkout & Time Slot | Order Confirmed |
 | :---: | :---: | :---: | :---: |
-| <img src="../../assets/screenshots/hanago/product_details.png" width="180"/> | <img src="../../assets/screenshots/hanago/cart.png" width="180"/> | <img src="../../assets/screenshots/hanago/checkout.png" width="180"/> | <img src="../../assets/screenshots/hanago/order_confirmed.png" width="180"/> |
+| <img src="../../assets/screenshots/greencart/product_details.png" width="180"/> | <img src="../../assets/screenshots/greencart/cart.png" width="180"/> | <img src="../../assets/screenshots/greencart/checkout.png" width="180"/> | <img src="../../assets/screenshots/greencart/order_confirmed.png" width="180"/> |
 
 ### 📦 Order Management & Account
 | Live Order Tracking | Order History | Saved Addresses | Notification Center |
 | :---: | :---: | :---: | :---: |
-| <img src="../../assets/screenshots/hanago/track_order.png" width="180"/> | <img src="../../assets/screenshots/hanago/my_orders.png" width="180"/> | <img src="../../assets/screenshots/hanago/delivery_address.png" width="180"/> | <img src="../../assets/screenshots/hanago/notifications.png" width="180"/> |
+| <img src="../../assets/screenshots/greencart/track_order.png" width="180"/> | <img src="../../assets/screenshots/greencart/my_orders.png" width="180"/> | <img src="../../assets/screenshots/greencart/delivery_address.png" width="180"/> | <img src="../../assets/screenshots/greencart/notifications.png" width="180"/> |
 
 </div>
 
